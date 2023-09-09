@@ -14,11 +14,6 @@ heading.onmouseleave = (ev) => {
     heading.style.color = "coral";
 }
 
-
-
-document.addEventListener(onload, imageLoaded)
-
-
 const imageLoaded = () => {
     fetch("https://slack.com/api/users.profile.get")
     .then(res => res.json())
@@ -27,3 +22,7 @@ const imageLoaded = () => {
     })
     .catch(err => console.log(err))
 }
+
+document.addEventListener(onload, imageLoaded)
+
+
