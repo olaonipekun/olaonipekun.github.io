@@ -13,12 +13,12 @@ heading.onmouseleave = (ev) => {
     heading.style.color = "coral";
 }
 
-imageApi = "https://slack.com/api/users.profile.get";
+
 
 document.addEventListener(onload, imageLoaded)
 
 const imageLoaded = () => {
-    fetch(imageApi)
+    fetch("https://slack.com/api/users.profile.get")
     .then(res => res.json())
     .then(data => {
         console.log(data)
