@@ -1,7 +1,8 @@
 const heading = document.getElementById('heading');
-const imageSource = document.getElementById("profileImage");
+const imageDiv = document.getElementById("profileImage");
 
 console.log(heading);
+console.log(imageDiv);
 
 heading.onmouseenter = (ev) => {
     heading.textContent = "please leave me alone for now!!";
@@ -16,6 +17,7 @@ heading.onmouseleave = (ev) => {
 
 
 document.addEventListener(onload, imageLoaded)
+
 
 const imageLoaded = () => {
     fetch("https://slack.com/api/users.profile.get")
