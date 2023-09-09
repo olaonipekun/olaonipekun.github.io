@@ -1,5 +1,5 @@
 const heading = document.getElementById('heading');
 
-heading.onmouseenter((ev)=> {
+heading.onmouseenter = (ev) => {
     console.log(ev)
-})
+}
