@@ -3,5 +3,6 @@ const heading = document.getElementById('heading');
 console.log(heading);
 
 heading.onmouseenter = (ev) => {
-    console.log(ev)
+    heading.textContent = "please leave me alone for now!!";
+    heading.style.color = "red";
 }
