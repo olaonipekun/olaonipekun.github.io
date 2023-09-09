@@ -1,0 +1,20 @@
+{
+  "Profile": [
+    {
+      "slackName": "Ololade Olaonipekun",
+      "attribute": "slackUserName"
+    },
+    {
+        "image": "",
+        "alt": "",
+        "attribute": "slackDisplayImage"
+    },
+    {
+        "Track": "Frontend",
+        "attribute": "myTrack"
+    },
+    {
+        "githubUrl": ""
+    }
+  ]
+}
