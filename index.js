@@ -1,9 +1,10 @@
 const heading = document.getElementById('heading');
 
+heading.style.color = "coral";
 
 heading.onmouseenter = (ev) => {
     heading.textContent = "please leave me alone for now!!";
-    heading.style.color = "red";
+    heading.style.color = "coral";
 }
 
 heading.onmouseleave = (ev) => {

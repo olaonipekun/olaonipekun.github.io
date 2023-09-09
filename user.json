@@ -5,7 +5,7 @@
       "attribute": "slackUserName"
     },
     {
-        "image": "",
+        "image": "https://github.com/olaonipekun/olaonipekun.github.io/blob/main/asset/IMG-20220824-WA0006.jpg",
         "alt": "",
         "attribute": "slackDisplayImage"
     },
@@ -14,7 +14,8 @@
         "attribute": "myTrack"
     },
     {
-        "githubUrl": ""
+        "githubUrl": "https://github.com/olaonipekun/olaonipekun.github.io",
+        "attribute": "githubURL"
     }
   ]
 }
