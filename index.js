@@ -7,7 +7,7 @@ heading.onmouseenter = (ev) => {
     heading.style.color = "red";
 }
 
-heading.onmouseleave = () => {
+heading.onmouseleave = (ev) => {
     heading.textContent = "Hello Everyone";
-    heading.style.color = 'coral';
+    heading.style.color = "coral";
 }
