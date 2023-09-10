@@ -1,21 +1,15 @@
 {
   "Profile": [
     {
-      "slackName": "Ololade Olaonipekun",
-      "attribute": "slackUserName"
-    },
-    {
-        "image": "https://github.com/olaonipekun/olaonipekun.github.io/blob/main/asset/IMG-20220824-WA0006.jpg",
-        "alt": "",
-        "attribute": "slackDisplayImage"
-    },
-    {
-        "Track": "Frontend",
-        "attribute": "myTrack"
-    },
-    {
-        "githubUrl": "https://github.com/olaonipekun/olaonipekun.github.io",
-        "attribute": "githubURL"
+      "slack_name": "Ololade Olaonipekun",
+      "slack_name_attribute": "slackUserName",
+      "image": "http://127.0.0.1:5500/asset/IMG-20220824-WA0006.jpg",
+      "alt": "",
+      "image_attribute": "slackDisplayImage",
+      "track": "Frontend",
+      "track_attribute": "myTrack",
+      "github_url": "https://github.com/olaonipekun/olaonipekun.github.io",
+      "github_url_attribute": "githubURL"
     }
   ]
 }
