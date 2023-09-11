@@ -42,15 +42,6 @@ fetch("./user.json")
     profileImage.setAttribute('data-testid', `${datas.image_attribute}`)
     profileImage.setAttribute('alt', `${datas.alt}`)
 
-    // setting github url data and attribute
-    let gitHubA = document.createElement("a")
-    let gitHubText = document.createTextNode("Check out the github repo")
-    gitHubA.appendChild(gitHubText)
-    gitHubA.title = "github repo"
-    gitHubA.href = datas.github_url
-    gitHubUrl.innerHTML = gitHubLink;
-    gitHubUrl.setAttribute('data-testid', `${datas.github_url_attribute}`)
-
     // UTC DATE AND TIME
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let d = new Date()
@@ -66,5 +57,14 @@ fetch("./user.json")
     }
     updateUTC();
     setInterval(updateUTC, 1000);
+
+   // setting github url data and attribute
+   let gitHubA = document.createElement("a")
+   let gitHubText = document.createTextNode("Check out the github repo")
+   gitHubA.appendChild(gitHubText)
+   gitHubA.title = "github repo"
+   gitHubA.href = datas.github_url
+   gitHubUrl.innerHTML = gitHubLink;
+   gitHubUrl.setAttribute('data-testid', `${datas.github_url_attribute}`)
   })
   .catch(err => console.log(err))
