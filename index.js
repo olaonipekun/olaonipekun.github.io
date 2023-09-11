@@ -11,7 +11,6 @@ let utcTime = document.getElementById("utcTime")
 utcTime.classList.add("data_edit")
 slackName.classList.add("text_edit")
 gitHubUrl.classList.add("data_edit")
-utcTimeText.classList.add("text_edit")
 heading.classList.add("text_edit");
 
 // UTC DATE AND TIME
