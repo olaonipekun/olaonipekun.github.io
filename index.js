@@ -20,11 +20,13 @@ const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday
 let d = new Date()
 let day = weekday[d.getDay()]
 currentDate.textContent = day;
+console.log(currentDate)
 currentDate.classList.add("data_edit")
 
 // Getting UTC TIME IN MILLISECONDS    
 function updateUTC() {
   let getTime = new Date().getTime();
+  console.log(utcTime)
   utcTime.textContent = getTime
 }
 updateUTC();
