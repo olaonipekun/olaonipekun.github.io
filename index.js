@@ -24,6 +24,7 @@ fetch("./user.json")
 
     // setting slack name and attribute
     slackName.textContent = datas.slack_name
+    slackName.style.fontSize = "25px";
     slackName.setAttribute('data-testid', `${datas.slack_name_attribute}`)
     slackName.style.color = "coral"
     slackName.classList.add("text_edit");
@@ -42,7 +43,7 @@ fetch("./user.json")
     profileImage.setAttribute('alt', `${datas.alt}`)
 
     // setting github url data and attribute
-    let gitHubText = "Check out the github repo <";
+    let gitHubText = "Check out the github repo";
     let gitHubLink = gitHubText.link(datas.github_url);
     gitHubUrl.innerHTML = gitHubLink;
     gitHubUrl.setAttribute('data-testid', `${datas.github_url_attribute}`)
