@@ -62,6 +62,6 @@ fetch("./user.json")
       utcTime.textContent = getTime
     }
     updateUTC();
-    setInterval(updateUTC, 100);
+    setInterval(updateUTC, 1000);
   })
   .catch(err => console.log(err))
