@@ -8,16 +8,12 @@ body {
 
 .layout{
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 .profile_image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
   border-radius: 2.5rem;
 }
 
@@ -25,8 +21,6 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .data_edit {
@@ -34,6 +28,5 @@ body {
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  
 }
