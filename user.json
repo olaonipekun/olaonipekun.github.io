@@ -3,8 +3,7 @@
     {
       "slack_name": "Ololade Olaonipekun",
       "slack_name_attribute": "slackUserName",
-      "image": ["http://127.0.0.1:5500/asset/IMG-20220824-WA0006.jpg",
-                "https://raw.githubusercontent.com/olaonipekun/olaonipekun.github.io/main/asset/IMG-20220824-WA0006.jpg"],
+      "image":"https://raw.githubusercontent.com/olaonipekun/olaonipekun.github.io/main/asset/IMG-20220824-WA0006.jpg",
       "alt": "olaonipekunololade94",
       "image_attribute": "slackDisplayImage",
       "track": "Frontend",

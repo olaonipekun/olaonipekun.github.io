@@ -38,7 +38,7 @@ fetch("./user.json")
     heading.classList.add("text_edit");
 
     // getting profile image and setting attribute
-    profileImage.setAttribute('src', `${datas.image[1] || datas.image[0]}`)
+    profileImage.setAttribute('src', `${datas.image}`)
     profileImage.setAttribute('data-testid', `${datas.image_attribute}`)
     profileImage.setAttribute('alt', `${datas.alt}`)
 
