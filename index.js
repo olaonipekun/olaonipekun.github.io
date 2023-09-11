@@ -43,8 +43,11 @@ fetch("./user.json")
     profileImage.setAttribute('alt', `${datas.alt}`)
 
     // setting github url data and attribute
-    let gitHubText = "Check out the github repo";
-    let gitHubLink = gitHubText.link(datas.github_url);
+    let gitHubA = document.createElement("a")
+    let gitHubText = document.createTextNode("Check out the github repo")
+    gitHubA.appendChild(gitHubText)
+    gitHubA.title = "github repo"
+    gitHubA.href = datas.github_url
     gitHubUrl.innerHTML = gitHubLink;
     gitHubUrl.setAttribute('data-testid', `${datas.github_url_attribute}`)
 
