@@ -63,7 +63,7 @@ fetch("./user.json")
    let gitHubText = document.createTextNode("Check out the github repo")
    gitHubA.appendChild(gitHubText)
    gitHubA.title = "github repo"
-   gitHubA.href = datas.github_url
+   gitHubA.href = `${datas.github_url}`
    gitHubUrl.innerHTML = gitHubLink;
    gitHubUrl.setAttribute('data-testid', `${datas.github_url_attribute}`)
   })
