@@ -5,3 +5,22 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.profile_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.text_edit {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.data_edit {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}

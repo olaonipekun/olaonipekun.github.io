@@ -1,3 +1,8 @@
+let dateText = document.getElementById("dateText")
+dateText.classList.add("text_edit")
+
+let utcTimeText = document.getElementById("utcTimeText")
+utcTimeText.classList.add("text_edit")
 
 // Fetching Data from user.json file
 fetch("./user.json")
@@ -12,13 +17,16 @@ fetch("./user.json")
     let slackName = document.getElementById("slackName")
     let profileImage = document.getElementById("profileImage")
     let gitHubUrl = document.getElementById("gitHubUrl")
+    gitHubUrl.classList.add("data_edit")
     let currentDate = document.getElementById("currentDate")
     let utcTime = document.getElementById("utcTime")
+    utcTime.classList.add("data_edit")
 
     // setting slack name and attribute
     slackName.textContent = datas.slack_name
     slackName.setAttribute('data-testid', `${datas.slack_name_attribute}`)
     slackName.style.color = "coral"
+    slackName.classList.add("text_edit");
 
     // setting heading as track and fixing track attribute
     heading.style.color = "coral";
@@ -26,6 +34,7 @@ fetch("./user.json")
     const trackText = document.createTextNode(track)
     heading.appendChild(trackText)
     heading.setAttribute('data-testid', `${datas.track_attribute}`)
+    heading.classList.add("text_edit");
 
     // getting profile image and setting attribute
     profileImage.setAttribute('src', `${datas.image[1] || datas.image[0]}`)
@@ -44,6 +53,7 @@ fetch("./user.json")
     let day = weekday[d.getDay()]
     currentDate.textContent = day;
     currentDate.setAttribute('data-testid', `${datas.currentDayOfTheWeek}`)
+    currentDate.classList.add("data_edit")
 
     // Getting UTC TIME IN MILLISECONDS
     d.setUTCMilliseconds();
