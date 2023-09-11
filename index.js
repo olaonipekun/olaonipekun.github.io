@@ -56,9 +56,12 @@ fetch("./user.json")
     currentDate.setAttribute('data-testid', `${datas.currentDayOfTheWeek}`)
     currentDate.classList.add("data_edit")
 
-    // Getting UTC TIME IN MILLISECONDS
-    d.setUTCMilliseconds();
-    let getTime = new Date().getTime()
-    utcTime.textContent = getTime
+    // Getting UTC TIME IN MILLISECONDS    
+    function updateUTC() {
+      let getTime = new Date().getTime();
+      utcTime.textContent = getTime
+    }
+    updateUTC();
+    setInterval(updateUTC, 100);
   })
   .catch(err => console.log(err))
