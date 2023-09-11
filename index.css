@@ -15,14 +15,15 @@ body {
   margin-right: auto;
   width: 20%;
   border-radius: 2.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
 }
 
 .text_edit {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .data_edit {
