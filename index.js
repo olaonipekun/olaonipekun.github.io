@@ -18,7 +18,7 @@ fetch("./user.json")
     // setting slack name and attribute
     slackName.textContent = datas.slack_name
     slackName.setAttribute('data-testid', `${datas.slack_name_attribute}`)
-    console.log(slackName)
+    slackName.style.color = "coral"
 
     // setting heading as track and fixing track attribute
     heading.style.color = "coral";
@@ -26,20 +26,17 @@ fetch("./user.json")
     const trackText = document.createTextNode(track)
     heading.appendChild(trackText)
     heading.setAttribute('data-testid', `${datas.track_attribute}`)
-    console.log(heading)
 
     // getting profile image and setting attribute
     profileImage.setAttribute('src', `${datas.image[1] || datas.image[0]}`)
     profileImage.setAttribute('data-testid', `${datas.image_attribute}`)
     profileImage.setAttribute('alt', `${datas.alt}`)
-    console.log(profileImage)
 
     // setting github url data and attribute
     let gitHubText = "Check out the github repo <";
     let gitHubLink = gitHubText.link(datas.github_url);
     gitHubUrl.innerHTML = gitHubLink;
     gitHubUrl.setAttribute('data-testid', `${datas.github_url_attribute}`)
-    console.log(gitHubUrl)
 
     // UTC DATE AND TIME
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -48,7 +45,7 @@ fetch("./user.json")
     currentDate.textContent = day;
     currentDate.setAttribute('data-testid', `${datas.currentDayOfTheWeek}`)
 
-
+    // Getting UTC TIME IN MILLISECONDS
     d.setUTCMilliseconds();
     let getTime = new Date().getTime()
     utcTime.textContent = getTime
