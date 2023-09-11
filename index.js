@@ -45,11 +45,12 @@ fetch("./user.json")
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let d = new Date()
     let day = weekday[d.getDay()]
-    currentDate.innerHTML = "Date: " + day;
+    currentDate.textContent = day;
     currentDate.setAttribute('data-testid', `${datas.currentDayOfTheWeek}`)
+
 
     d.setUTCMilliseconds();
     let getTime = new Date().getTime()
-    utcTime.textContent = "UTC Time: " + getTime
+    utcTime.textContent = getTime
   })
   .catch(err => console.log(err))
