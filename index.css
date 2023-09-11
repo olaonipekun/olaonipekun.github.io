@@ -6,6 +6,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.layout{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .profile_image {
   display: block;
   margin-left: auto;
