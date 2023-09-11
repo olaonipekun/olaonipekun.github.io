@@ -1,25 +1,55 @@
-const heading = document.getElementById('heading');
 
-heading.style.color = "coral";
+// Fetching Data from user.json file
+fetch("./user.json")
+  .then((res) => res.json())
+  .then((data) => {
 
-heading.onmouseenter = (ev) => {
-    heading.textContent = "please leave me alone for now!!";
-    heading.style.color = "coral";
-}
+    // putting the fetched data in it's own variable
+    let datas = data.Profile[0]
 
-heading.onmouseleave = (ev) => {
-    heading.textContent = "Hello Everyone";
-    heading.style.color = "coral";
-}
-
-fetch("http://127.0.0.1:5500/user.json")
-.then((res) => res.json())
-.then((data) => {
-    console.log(data)
+    // getting the DOM elements
+    let heading = document.getElementById('heading');
+    let slackName = document.getElementById("slackName")
     let profileImage = document.getElementById("profileImage")
+    let gitHubUrl = document.getElementById("gitHubUrl")
+    let currentDate = document.getElementById("currentDate")
+    let utcTime = document.getElementById("utcTime")
+
+    // setting slack name and attribute
+    slackName.textContent = datas.slack_name
+    slackName.setAttribute('data-testid', `${datas.slack_name_attribute}`)
+    console.log(slackName)
+
+    // setting heading as track and fixing track attribute
+    heading.style.color = "coral";
+    const track = datas.track
+    const trackText = document.createTextNode(track)
+    heading.appendChild(trackText)
+    heading.setAttribute('data-testid', `${datas.track_attribute}`)
+    console.log(heading)
+
+    // getting profile image and setting attribute
+    profileImage.setAttribute('src', `${datas.image[1] || datas.image[0]}`)
+    profileImage.setAttribute('data-testid', `${datas.image_attribute}`)
+    profileImage.setAttribute('alt', `${datas.alt}`)
     console.log(profileImage)
-    let datas = data
-    console.log(datas.Profile[0].image)
-    profileImage.setAttribute('src', `${data.Profile[0].image}`)
-})
-.catch(err => console.log(err))
+
+    // setting github url data and attribute
+    let gitHubText = "Check out the github repo <";
+    let gitHubLink = gitHubText.link(datas.github_url);
+    gitHubUrl.innerHTML = gitHubLink;
+    gitHubUrl.setAttribute('data-testid', `${datas.github_url_attribute}`)
+    console.log(gitHubUrl)
+
+    // UTC DATE AND TIME
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let d = new Date()
+    let day = weekday[d.getDay()]
+    currentDate.innerHTML = "Date: " + day;
+    currentDate.setAttribute('data-testid', `${datas.currentDayOfTheWeek}`)
+
+    d.setUTCMilliseconds();
+    let getTime = new Date().getTime()
+    utcTime.textContent = "UTC Time: " + getTime
+  })
+  .catch(err => console.log(err))

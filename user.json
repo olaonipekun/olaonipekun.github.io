@@ -3,13 +3,16 @@
     {
       "slack_name": "Ololade Olaonipekun",
       "slack_name_attribute": "slackUserName",
-      "image": "http://127.0.0.1:5500/asset/IMG-20220824-WA0006.jpg",
-      "alt": "",
+      "image": ["http://127.0.0.1:5500/asset/IMG-20220824-WA0006.jpg",
+                "https://raw.githubusercontent.com/olaonipekun/olaonipekun.github.io/main/asset/IMG-20220824-WA0006.jpg"],
+      "alt": "olaonipekunololade94",
       "image_attribute": "slackDisplayImage",
       "track": "Frontend",
       "track_attribute": "myTrack",
       "github_url": "https://github.com/olaonipekun/olaonipekun.github.io",
-      "github_url_attribute": "githubURL"
+      "github_url_attribute": "githubURL",
+      "day-attribute": "currentDayOfTheWeek",
+      "utc-time-attribute": "currentUTCTime"
     }
   ]
 }
